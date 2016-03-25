@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cs_type: MyString
+  school_id: 
+
+two:
+  cs_type: MyString
+  school_id: 
