@@ -1,4 +1,5 @@
 class SchoolsController < ApplicationController
+  config.authentication_method = :authenticate_admin_user!
   before_action :set_school, only: [:show, :edit, :update, :destroy]
 
   # GET /schools

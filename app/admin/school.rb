@@ -1,6 +1,13 @@
 ActiveAdmin.register School do
   permit_params :school_name, :description
 
+  index do
+    column :title
+    column '' do |school|
+      link_to 'Edit', admin_school_path(school) if authorized? :update, school
+    end
+  end
+
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
